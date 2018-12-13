@@ -13,9 +13,6 @@ func factorsAbove500(n int) bool {
 		count := 2
 		for i := 2; i <= int(math.Sqrt(float64(n))); i++ {
 			if val := hm[i]; val {
-				// for k := range hm {
-				// 	fmt.Println(k)
-				// }
 				return false
 			}
 			if n%i == 0 {
@@ -29,9 +26,6 @@ func factorsAbove500(n int) bool {
 		}
 
 	}
-	// for k := range hm {
-	// 	fmt.Println(k)
-	// }
 	return false
 }
 
